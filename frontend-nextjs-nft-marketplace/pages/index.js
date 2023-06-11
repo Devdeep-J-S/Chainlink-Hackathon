@@ -15,10 +15,7 @@ export default function Home() {
   const { loading, error, data: listedNfts } = useQuery(GET_ACTIVE_ITEMS);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="font-ROBERTO text-m lg:flex title">
-        NFT listed in the Bazaar
-      </div>
+    <main>
       <div className="container mx-auto">
         <div className="flex flex-wrap">
           {isWeb3Enabled && chainId ? (

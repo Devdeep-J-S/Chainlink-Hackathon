@@ -106,38 +106,32 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div className {...styles.form}>
-        <Form
-          // add style and make it look nice
-
-          onSubmit={approveAndList}
-          data={[
-            {
-              name: "NFT Address",
-              type: "text",
-              inputWidth: "50%",
-              value: "",
-              key: "nftAddress",
-            },
-            {
-              name: "Token ID",
-              type: "number",
-              inputWidth: "50%",
-              value: "",
-              key: "tokenId",
-            },
-            {
-              name: "Price (in ETH)",
-              type: "number",
-              inputWidth: "50%",
-              value: "",
-              key: "price",
-            },
-          ]}
-          title="NFT Listing Form"
-          id="Main Form"
-        />
-      </div>
+      <Form
+        // add style and make it look nice
+        onSubmit={approveAndList}
+        data={[
+          {
+            name: "NFT Address",
+            type: "text",
+            value: "",
+            key: "nftAddress",
+          },
+          {
+            name: "Token ID",
+            type: "number",
+            value: "",
+            key: "tokenId",
+          },
+          {
+            name: "Price (in ETH)",
+            type: "number",
+            value: "",
+            key: "price",
+          },
+        ]}
+        title="NFT Listing Form"
+        id="Main Form"
+      />
       <div>Withdraw {proceeds} proceeds</div>
       {proceeds != "0" ? (
         <Button

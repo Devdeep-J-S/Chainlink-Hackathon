@@ -17,17 +17,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(from color r g b);
 }
 
 .title {
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
   display: flex;
   justify-content: center;

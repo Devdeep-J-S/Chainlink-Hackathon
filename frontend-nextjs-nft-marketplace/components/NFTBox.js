@@ -95,7 +95,7 @@ export default function NFTBox({
   const handleBuyItemSuccess = () => {
     dispatch({
       type: "success",
-      message: "Item bought!",
+      // message: "Item bought!",
       title: "Item Bought",
       position: "topR",
     });
@@ -115,7 +115,8 @@ export default function NFTBox({
             />
             <Card
               title={tokenName}
-              description={tokenDescription}
+              description={nftAddress}
+              // description={tokenDescription}
               onClick={handleCardClick}
             >
               <div className="p-2">

@@ -1,9 +1,5 @@
 .container {
   padding: 0 10rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  font-size: 1.2rem;
 }
 
 .main {
