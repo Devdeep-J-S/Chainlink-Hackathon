@@ -18,7 +18,7 @@ export default function UpdateListingModal({
   const handleUpdateListingSuccess = () => {
     dispatch({
       type: "success",
-      message: "listing updated",
+      // message: "listing updated",
       title: "Listing updated - please refresh (and move blocks)",
       position: "topR",
     });
